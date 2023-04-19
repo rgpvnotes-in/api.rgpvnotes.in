@@ -1,0 +1,27 @@
+{
+    "name": "api",
+    "version": "2.0.0",
+    "private": true,
+    "description": "Web app for displaying public APIs.",
+    "license": "ISC",
+    "author": {
+        "name": "RGPV Notes",
+        "email": "hey@rgpvnotes.in",
+        "url": "https://www.rgpvnotes.in/"
+    },
+    "main": "src/index.js",
+    "scripts": {
+        "dev": "npx wrangler dev src/index.js --env dev",
+        "format": "prettier --write .",
+        "publish:prod": "npx wrangler publish src/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "itty-router": "^3.0.12"
+    },
+    "devDependencies": {
+        "eslint": "^8.38.0",
+        "prettier": "^2.8.7",
+        "wrangler": "^2.15.1"
+    }
+}
